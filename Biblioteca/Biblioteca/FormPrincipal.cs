@@ -12,9 +12,11 @@ namespace Biblioteca
 {
     public partial class FormPrincipal : Form
     {
+        LivroDao bdLivro;
         public FormPrincipal()
         {
             InitializeComponent();
+            bdLivro = new LivroDao();
         }
 
         private void label1_Click(object sender, EventArgs e)

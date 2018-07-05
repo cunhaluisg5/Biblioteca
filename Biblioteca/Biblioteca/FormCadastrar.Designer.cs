@@ -34,15 +34,15 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
+            this.textoNome = new System.Windows.Forms.TextBox();
+            this.textoGenero = new System.Windows.Forms.TextBox();
+            this.textoQuantidade = new System.Windows.Forms.TextBox();
+            this.textoAno = new System.Windows.Forms.MaskedTextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.textoAutor = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.textoPaginas = new System.Windows.Forms.TextBox();
+            this.textoValor = new System.Windows.Forms.TextBox();
             this.cadastrar = new System.Windows.Forms.Button();
             this.limpar = new System.Windows.Forms.Button();
             this.sair = new System.Windows.Forms.Button();
@@ -99,35 +99,36 @@
             this.label5.TabIndex = 4;
             this.label5.Text = "Valor:";
             // 
-            // textBox1
+            // textoNome
             // 
-            this.textBox1.Location = new System.Drawing.Point(150, 46);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(375, 20);
-            this.textBox1.TabIndex = 5;
+            this.textoNome.Location = new System.Drawing.Point(150, 46);
+            this.textoNome.Name = "textoNome";
+            this.textoNome.Size = new System.Drawing.Size(375, 20);
+            this.textoNome.TabIndex = 5;
             // 
-            // textBox2
+            // textoGenero
             // 
-            this.textBox2.Location = new System.Drawing.Point(152, 96);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(204, 20);
-            this.textBox2.TabIndex = 6;
+            this.textoGenero.Location = new System.Drawing.Point(152, 96);
+            this.textoGenero.Name = "textoGenero";
+            this.textoGenero.Size = new System.Drawing.Size(204, 20);
+            this.textoGenero.TabIndex = 6;
             // 
-            // textBox3
+            // textoQuantidade
             // 
-            this.textBox3.Location = new System.Drawing.Point(416, 152);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(95, 20);
-            this.textBox3.TabIndex = 7;
+            this.textoQuantidade.Location = new System.Drawing.Point(416, 152);
+            this.textoQuantidade.Name = "textoQuantidade";
+            this.textoQuantidade.Size = new System.Drawing.Size(95, 20);
+            this.textoQuantidade.TabIndex = 7;
+            this.textoQuantidade.Text = "0";
             // 
-            // maskedTextBox1
+            // textoAno
             // 
-            this.maskedTextBox1.Location = new System.Drawing.Point(594, 46);
-            this.maskedTextBox1.Mask = "00/00/0000";
-            this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.Size = new System.Drawing.Size(77, 20);
-            this.maskedTextBox1.TabIndex = 9;
-            this.maskedTextBox1.ValidatingType = typeof(System.DateTime);
+            this.textoAno.Location = new System.Drawing.Point(594, 46);
+            this.textoAno.Mask = "00/00/0000";
+            this.textoAno.Name = "textoAno";
+            this.textoAno.Size = new System.Drawing.Size(77, 20);
+            this.textoAno.TabIndex = 9;
+            this.textoAno.ValidatingType = typeof(System.DateTime);
             // 
             // label6
             // 
@@ -139,12 +140,12 @@
             this.label6.TabIndex = 10;
             this.label6.Text = "Autor:";
             // 
-            // textBox5
+            // textoAutor
             // 
-            this.textBox5.Location = new System.Drawing.Point(446, 94);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(227, 20);
-            this.textBox5.TabIndex = 11;
+            this.textoAutor.Location = new System.Drawing.Point(446, 94);
+            this.textoAutor.Name = "textoAutor";
+            this.textoAutor.Size = new System.Drawing.Size(227, 20);
+            this.textoAutor.TabIndex = 11;
             // 
             // label7
             // 
@@ -156,19 +157,22 @@
             this.label7.TabIndex = 12;
             this.label7.Text = "Páginas:";
             // 
-            // textBox6
+            // textoPaginas
             // 
-            this.textBox6.Location = new System.Drawing.Point(152, 148);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(99, 20);
-            this.textBox6.TabIndex = 13;
+            this.textoPaginas.Location = new System.Drawing.Point(152, 148);
+            this.textoPaginas.Name = "textoPaginas";
+            this.textoPaginas.Size = new System.Drawing.Size(99, 20);
+            this.textoPaginas.TabIndex = 13;
+            this.textoPaginas.Text = "0";
+            this.textoPaginas.TextChanged += new System.EventHandler(this.textoPaginas_TextChanged);
             // 
-            // textBox4
+            // textoValor
             // 
-            this.textBox4.Location = new System.Drawing.Point(606, 150);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(67, 20);
-            this.textBox4.TabIndex = 8;
+            this.textoValor.Location = new System.Drawing.Point(606, 150);
+            this.textoValor.Name = "textoValor";
+            this.textoValor.Size = new System.Drawing.Size(67, 20);
+            this.textoValor.TabIndex = 8;
+            this.textoValor.Text = "0";
             // 
             // cadastrar
             // 
@@ -182,6 +186,7 @@
             this.cadastrar.Text = "Cadastrar";
             this.cadastrar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.cadastrar.UseVisualStyleBackColor = true;
+            this.cadastrar.Click += new System.EventHandler(this.cadastrar_Click);
             // 
             // limpar
             // 
@@ -195,6 +200,7 @@
             this.limpar.Text = "Limpar";
             this.limpar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.limpar.UseVisualStyleBackColor = true;
+            this.limpar.Click += new System.EventHandler(this.limpar_Click);
             // 
             // sair
             // 
@@ -219,15 +225,15 @@
             this.Controls.Add(this.sair);
             this.Controls.Add(this.limpar);
             this.Controls.Add(this.cadastrar);
-            this.Controls.Add(this.textBox6);
+            this.Controls.Add(this.textoPaginas);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.textoAutor);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.maskedTextBox1);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.textoAno);
+            this.Controls.Add(this.textoValor);
+            this.Controls.Add(this.textoQuantidade);
+            this.Controls.Add(this.textoGenero);
+            this.Controls.Add(this.textoNome);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -250,15 +256,15 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
+        private System.Windows.Forms.TextBox textoNome;
+        private System.Windows.Forms.TextBox textoGenero;
+        private System.Windows.Forms.TextBox textoQuantidade;
+        private System.Windows.Forms.MaskedTextBox textoAno;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox textoAutor;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox textoPaginas;
+        private System.Windows.Forms.TextBox textoValor;
         private System.Windows.Forms.Button cadastrar;
         private System.Windows.Forms.Button limpar;
         private System.Windows.Forms.Button sair;
