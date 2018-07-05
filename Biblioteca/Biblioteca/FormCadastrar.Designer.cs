@@ -208,6 +208,7 @@
             this.sair.Text = "Sair";
             this.sair.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.sair.UseVisualStyleBackColor = true;
+            this.sair.Click += new System.EventHandler(this.sair_Click);
             // 
             // FormCadastrar
             // 
