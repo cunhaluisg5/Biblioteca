@@ -53,5 +53,10 @@ namespace Biblioteca
             textoSenha.Text = ("");
             textoNome.Focus();
         }
+
+        private void sair_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
+        }
     }
 }
