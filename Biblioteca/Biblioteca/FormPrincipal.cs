@@ -45,5 +45,12 @@ namespace Biblioteca
         {
             Application.Exit();
         }
+
+        private void MenuItemSobre_Click(object sender, EventArgs e)
+        {
+            string nome = "Luís Gustavo da Cunha Cipriani";
+            string dataAtual = DateTime.Now.ToShortDateString();
+            MessageBox.Show(nome + "\n" + dataAtual, "Informações", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
     }
 }

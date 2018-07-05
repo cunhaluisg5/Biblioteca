@@ -99,8 +99,9 @@
             // MenuItemSobre
             // 
             this.MenuItemSobre.Name = "MenuItemSobre";
-            this.MenuItemSobre.Size = new System.Drawing.Size(104, 22);
+            this.MenuItemSobre.Size = new System.Drawing.Size(180, 22);
             this.MenuItemSobre.Text = "Sobre";
+            this.MenuItemSobre.Click += new System.EventHandler(this.MenuItemSobre_Click);
             // 
             // FormPrincipal
             // 
