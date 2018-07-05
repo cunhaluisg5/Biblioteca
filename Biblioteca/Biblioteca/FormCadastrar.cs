@@ -13,11 +13,9 @@ namespace Biblioteca
 {
     public partial class FormCadastrar : Form
     {
-        public static ArrayList lista = null;
         public FormCadastrar()
         {
             InitializeComponent();
-            lista = new ArrayList();
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -36,9 +34,9 @@ namespace Biblioteca
             textoAno.Text = ("  /  /    ");
             textoGenero.Text = ("");
             textoAutor.Text = ("");
-            textoPaginas.Text = ("");
-            textoQuantidade.Text = ("");
-            textoValor.Text = ("");
+            textoPaginas.Text = ("0");
+            textoQuantidade.Text = ("0");
+            textoValor.Text = ("0");
             textoNome.Focus();
         }
 
@@ -54,7 +52,7 @@ namespace Biblioteca
             Livro livro = new Livro(nome, ano, genero, autor, paginas, quantidade, valor);
             if (livro.validaLivro())
             {
-                lista.Add(livro);
+                FormPrincipal.lista.Add(livro);
                 MessageBox.Show("Livro Cadastrado com sucesso!");
             }
             else {

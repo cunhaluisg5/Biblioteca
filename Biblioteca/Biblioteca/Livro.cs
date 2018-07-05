@@ -37,7 +37,7 @@ namespace Biblioteca
             str += "\nAutor: " + autor;
             str += "\nPáginas: " + paginas;
             str += "\nQuantidade: " + quantidade;
-            str += "\nValor: " + valor;
+            str += "\nValor: " + valor + "\n";
             return str;
         }
 

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +13,11 @@ namespace Biblioteca
 {
     public partial class FormPrincipal : Form
     {
+        public static ArrayList lista = null;
         public FormPrincipal()
         {
             InitializeComponent();
+            lista = new ArrayList();
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -36,6 +39,11 @@ namespace Biblioteca
         {
             FormVisualizar novo = new FormVisualizar();
             novo.Show();
+        }
+
+        private void MenuItemSair_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

@@ -31,11 +31,11 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormPrincipal));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.MenuOperacoes = new System.Windows.Forms.ToolStripMenuItem();
-            this.MenuAjuda = new System.Windows.Forms.ToolStripMenuItem();
             this.MenuItemCadastrar = new System.Windows.Forms.ToolStripMenuItem();
             this.MenuItemVisualizar = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.MenuItemSair = new System.Windows.Forms.ToolStripMenuItem();
+            this.MenuAjuda = new System.Windows.Forms.ToolStripMenuItem();
             this.MenuItemSobre = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -62,14 +62,6 @@
             this.MenuOperacoes.Size = new System.Drawing.Size(75, 20);
             this.MenuOperacoes.Text = "Operações";
             // 
-            // MenuAjuda
-            // 
-            this.MenuAjuda.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.MenuItemSobre});
-            this.MenuAjuda.Name = "MenuAjuda";
-            this.MenuAjuda.Size = new System.Drawing.Size(50, 20);
-            this.MenuAjuda.Text = "Ajuda";
-            // 
             // MenuItemCadastrar
             // 
             this.MenuItemCadastrar.Name = "MenuItemCadastrar";
@@ -94,11 +86,20 @@
             this.MenuItemSair.Name = "MenuItemSair";
             this.MenuItemSair.Size = new System.Drawing.Size(180, 22);
             this.MenuItemSair.Text = "Sair";
+            this.MenuItemSair.Click += new System.EventHandler(this.MenuItemSair_Click);
+            // 
+            // MenuAjuda
+            // 
+            this.MenuAjuda.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.MenuItemSobre});
+            this.MenuAjuda.Name = "MenuAjuda";
+            this.MenuAjuda.Size = new System.Drawing.Size(50, 20);
+            this.MenuAjuda.Text = "Ajuda";
             // 
             // MenuItemSobre
             // 
             this.MenuItemSobre.Name = "MenuItemSobre";
-            this.MenuItemSobre.Size = new System.Drawing.Size(180, 22);
+            this.MenuItemSobre.Size = new System.Drawing.Size(104, 22);
             this.MenuItemSobre.Text = "Sobre";
             // 
             // FormPrincipal
