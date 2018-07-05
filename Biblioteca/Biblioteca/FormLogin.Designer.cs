@@ -86,6 +86,7 @@
             this.entrar.Text = "Entrar";
             this.entrar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.entrar.UseVisualStyleBackColor = true;
+            this.entrar.Click += new System.EventHandler(this.entrar_Click);
             // 
             // limpar
             // 

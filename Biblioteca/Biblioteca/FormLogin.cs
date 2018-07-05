@@ -21,5 +21,10 @@ namespace Biblioteca
         {
 
         }
+
+        private void entrar_Click(object sender, EventArgs e)
+        {
+            Usuario usuario = new Usuario();
+        }
     }
 }
