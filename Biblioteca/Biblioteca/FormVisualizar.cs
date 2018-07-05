@@ -25,10 +25,16 @@ namespace Biblioteca
 
         private void buscar_Click(object sender, EventArgs e)
         {
+            limpar_Click(sender, e);
             ArrayList lista = FormCadastrar.lista;
             foreach (Livro l in lista) {
                 textoDados.AppendText(l.toString());
             }
+        }
+
+        private void limpar_Click(object sender, EventArgs e)
+        {
+            textoDados.Text = ("");
         }
     }
 }
