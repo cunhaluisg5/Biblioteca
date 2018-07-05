@@ -31,5 +31,11 @@ namespace Biblioteca
             FormCadastrar novo = new FormCadastrar();
             novo.Show();
         }
+
+        private void MenuItemVisualizar_Click(object sender, EventArgs e)
+        {
+            FormVisualizar novo = new FormVisualizar();
+            novo.Show();
+        }
     }
 }

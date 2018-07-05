@@ -82,6 +82,7 @@
             this.MenuItemVisualizar.Name = "MenuItemVisualizar";
             this.MenuItemVisualizar.Size = new System.Drawing.Size(180, 22);
             this.MenuItemVisualizar.Text = "Visualizar Livros";
+            this.MenuItemVisualizar.Click += new System.EventHandler(this.MenuItemVisualizar_Click);
             // 
             // toolStripSeparator1
             // 
