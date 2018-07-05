@@ -75,6 +75,7 @@
             this.MenuItemCadastrar.Name = "MenuItemCadastrar";
             this.MenuItemCadastrar.Size = new System.Drawing.Size(180, 22);
             this.MenuItemCadastrar.Text = "Cadastrar Livro";
+            this.MenuItemCadastrar.Click += new System.EventHandler(this.MenuItemCadastrar_Click);
             // 
             // MenuItemVisualizar
             // 

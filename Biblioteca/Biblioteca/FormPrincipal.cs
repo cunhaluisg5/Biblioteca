@@ -25,5 +25,11 @@ namespace Biblioteca
         private void FormPrincipal_Load(object sender, EventArgs e)
         {
         }
+
+        private void MenuItemCadastrar_Click(object sender, EventArgs e)
+        {
+            FormCadastrar novo = new FormCadastrar();
+            novo.Show();
+        }
     }
 }
