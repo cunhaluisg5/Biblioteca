@@ -36,5 +36,10 @@ namespace Biblioteca
         {
             textoDados.Text = ("");
         }
+
+        private void sair_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
+        }
     }
 }
