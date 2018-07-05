@@ -8,3 +8,4 @@ C:\GIT\Biblioteca\Biblioteca\Biblioteca\obj\Debug\Biblioteca.csproj.GenerateReso
 C:\GIT\Biblioteca\Biblioteca\Biblioteca\obj\Debug\Biblioteca.csproj.CoreCompileInputs.cache
 C:\GIT\Biblioteca\Biblioteca\Biblioteca\obj\Debug\Biblioteca.exe
 C:\GIT\Biblioteca\Biblioteca\Biblioteca\obj\Debug\Biblioteca.pdb
+C:\GIT\Biblioteca\Biblioteca\Biblioteca\obj\Debug\Biblioteca.FormPrincipal.resources
