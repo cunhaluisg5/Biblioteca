@@ -46,5 +46,12 @@ namespace Biblioteca
                 this.Visible = false;
             }
         }
+
+        private void limpar_Click(object sender, EventArgs e)
+        {
+            textoNome.Text = ("");
+            textoSenha.Text = ("");
+            textoNome.Focus();
+        }
     }
 }

@@ -100,6 +100,7 @@
             this.limpar.Text = "Limpar";
             this.limpar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.limpar.UseVisualStyleBackColor = true;
+            this.limpar.Click += new System.EventHandler(this.limpar_Click);
             // 
             // sair
             // 
@@ -128,6 +129,7 @@
             this.Controls.Add(this.label1);
             this.MaximizeBox = false;
             this.Name = "Login";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
             this.ResumeLayout(false);
             this.PerformLayout();
