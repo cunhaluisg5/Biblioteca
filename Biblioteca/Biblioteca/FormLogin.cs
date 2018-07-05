@@ -25,6 +25,26 @@ namespace Biblioteca
         private void entrar_Click(object sender, EventArgs e)
         {
             Usuario usuario = new Usuario();
+            string nome = textoNome.Text;
+            string senha = textoSenha.Text;
+
+            if (!usuario.verificaNome(nome))
+            {
+                MessageBox.Show("Nome digitado incorretamente\nPor favor, tente novamente!");
+            }
+            else if (!usuario.verificaSenha(senha))
+            {
+                MessageBox.Show("Senha digitada incorretamente!\nPor favor, tente novamente!");
+            }
+            else if (!usuario.verificaLogin(nome, senha))
+            {
+                MessageBox.Show("Login incorreto!\nPor favor, tente novamente!");
+            }
+            else {
+                FormPrincipal novaform = new FormPrincipal();
+                novaform.Show();
+                this.Visible = false;
+            }
         }
     }
 }

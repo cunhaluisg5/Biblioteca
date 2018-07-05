@@ -31,8 +31,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.nome = new System.Windows.Forms.TextBox();
-            this.senha = new System.Windows.Forms.TextBox();
+            this.textoNome = new System.Windows.Forms.TextBox();
+            this.textoSenha = new System.Windows.Forms.TextBox();
             this.entrar = new System.Windows.Forms.Button();
             this.limpar = new System.Windows.Forms.Button();
             this.sair = new System.Windows.Forms.Button();
@@ -59,19 +59,19 @@
             this.label2.TabIndex = 1;
             this.label2.Text = "Senha:";
             // 
-            // nome
+            // textoNome
             // 
-            this.nome.Location = new System.Drawing.Point(127, 61);
-            this.nome.Name = "nome";
-            this.nome.Size = new System.Drawing.Size(317, 20);
-            this.nome.TabIndex = 2;
+            this.textoNome.Location = new System.Drawing.Point(127, 61);
+            this.textoNome.Name = "textoNome";
+            this.textoNome.Size = new System.Drawing.Size(317, 20);
+            this.textoNome.TabIndex = 2;
             // 
-            // senha
+            // textoSenha
             // 
-            this.senha.Location = new System.Drawing.Point(127, 127);
-            this.senha.Name = "senha";
-            this.senha.Size = new System.Drawing.Size(317, 20);
-            this.senha.TabIndex = 3;
+            this.textoSenha.Location = new System.Drawing.Point(127, 127);
+            this.textoSenha.Name = "textoSenha";
+            this.textoSenha.Size = new System.Drawing.Size(317, 20);
+            this.textoSenha.TabIndex = 3;
             // 
             // entrar
             // 
@@ -122,8 +122,8 @@
             this.Controls.Add(this.sair);
             this.Controls.Add(this.limpar);
             this.Controls.Add(this.entrar);
-            this.Controls.Add(this.senha);
-            this.Controls.Add(this.nome);
+            this.Controls.Add(this.textoSenha);
+            this.Controls.Add(this.textoNome);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.MaximizeBox = false;
@@ -138,8 +138,8 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox nome;
-        private System.Windows.Forms.TextBox senha;
+        private System.Windows.Forms.TextBox textoNome;
+        private System.Windows.Forms.TextBox textoSenha;
         private System.Windows.Forms.Button entrar;
         private System.Windows.Forms.Button limpar;
         private System.Windows.Forms.Button sair;
