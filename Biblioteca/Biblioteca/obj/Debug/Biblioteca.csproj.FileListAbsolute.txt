@@ -1,0 +1,10 @@
+C:\GIT\Biblioteca\Biblioteca\Biblioteca\bin\Debug\Biblioteca.exe.config
+C:\GIT\Biblioteca\Biblioteca\Biblioteca\bin\Debug\Biblioteca.exe
+C:\GIT\Biblioteca\Biblioteca\Biblioteca\bin\Debug\Biblioteca.pdb
+C:\GIT\Biblioteca\Biblioteca\Biblioteca\obj\Debug\Biblioteca.csprojAssemblyReference.cache
+C:\GIT\Biblioteca\Biblioteca\Biblioteca\obj\Debug\Biblioteca.Login.resources
+C:\GIT\Biblioteca\Biblioteca\Biblioteca\obj\Debug\Biblioteca.Properties.Resources.resources
+C:\GIT\Biblioteca\Biblioteca\Biblioteca\obj\Debug\Biblioteca.csproj.GenerateResource.cache
+C:\GIT\Biblioteca\Biblioteca\Biblioteca\obj\Debug\Biblioteca.csproj.CoreCompileInputs.cache
+C:\GIT\Biblioteca\Biblioteca\Biblioteca\obj\Debug\Biblioteca.exe
+C:\GIT\Biblioteca\Biblioteca\Biblioteca\obj\Debug\Biblioteca.pdb
