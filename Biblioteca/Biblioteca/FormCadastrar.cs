@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +13,11 @@ namespace Biblioteca
 {
     public partial class FormCadastrar : Form
     {
+        public ArrayList lista = null;
         public FormCadastrar()
         {
             InitializeComponent();
+            lista = new ArrayList();
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -51,7 +54,8 @@ namespace Biblioteca
             Livro livro = new Livro(nome, ano, genero, autor, paginas, quantidade, valor);
             if (livro.validaLivro())
             {
-
+                lista.Add(livro);
+                MessageBox.Show("Livro Cadastrado com sucesso!");
             }
             else {
                 MessageBox.Show("Preencha todos os campos primeiro!");
