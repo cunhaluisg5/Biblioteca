@@ -11,3 +11,7 @@ C:\GIT\Biblioteca\Biblioteca\Biblioteca\obj\Debug\Biblioteca.pdb
 C:\GIT\Biblioteca\Biblioteca\Biblioteca\obj\Debug\Biblioteca.FormPrincipal.resources
 C:\GIT\Biblioteca\Biblioteca\Biblioteca\obj\Debug\Biblioteca.FormCadastrar.resources
 C:\GIT\Biblioteca\Biblioteca\Biblioteca\obj\Debug\Biblioteca.FormVisualizar.resources
+C:\GIT\Biblioteca\Biblioteca\Biblioteca\bin\Debug\Biblioteca.exe.manifest
+C:\GIT\Biblioteca\Biblioteca\Biblioteca\bin\Debug\Biblioteca.application
+C:\GIT\Biblioteca\Biblioteca\Biblioteca\obj\Debug\Biblioteca.exe.manifest
+C:\GIT\Biblioteca\Biblioteca\Biblioteca\obj\Debug\Biblioteca.application
