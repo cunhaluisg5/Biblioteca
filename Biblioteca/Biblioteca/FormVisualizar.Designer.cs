@@ -109,6 +109,7 @@
             this.Controls.Add(this.textoDados);
             this.Controls.Add(this.buscar);
             this.Controls.Add(this.label1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "FormVisualizar";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

@@ -42,7 +42,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(47, 59);
+            this.label1.Location = new System.Drawing.Point(47, 61);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(60, 20);
             this.label1.TabIndex = 0;
@@ -53,7 +53,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(47, 125);
+            this.label2.Location = new System.Drawing.Point(47, 127);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(66, 20);
             this.label2.TabIndex = 1;
@@ -61,17 +61,21 @@
             // 
             // textoNome
             // 
+            this.textoNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textoNome.Location = new System.Drawing.Point(127, 61);
             this.textoNome.Name = "textoNome";
-            this.textoNome.Size = new System.Drawing.Size(317, 20);
+            this.textoNome.Size = new System.Drawing.Size(317, 26);
             this.textoNome.TabIndex = 2;
             // 
             // textoSenha
             // 
+            this.textoSenha.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textoSenha.Location = new System.Drawing.Point(127, 127);
             this.textoSenha.Name = "textoSenha";
-            this.textoSenha.Size = new System.Drawing.Size(317, 20);
+            this.textoSenha.PasswordChar = '*';
+            this.textoSenha.Size = new System.Drawing.Size(317, 26);
             this.textoSenha.TabIndex = 3;
+            this.textoSenha.TextChanged += new System.EventHandler(this.textoSenha_TextChanged);
             // 
             // entrar
             // 
@@ -128,6 +132,7 @@
             this.Controls.Add(this.textoNome);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

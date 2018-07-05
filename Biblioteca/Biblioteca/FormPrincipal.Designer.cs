@@ -47,7 +47,7 @@
             this.MenuAjuda});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(800, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(800, 29);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -58,33 +58,37 @@
             this.MenuItemVisualizar,
             this.toolStripSeparator1,
             this.MenuItemSair});
+            this.MenuOperacoes.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MenuOperacoes.Name = "MenuOperacoes";
-            this.MenuOperacoes.Size = new System.Drawing.Size(75, 20);
+            this.MenuOperacoes.Size = new System.Drawing.Size(96, 25);
             this.MenuOperacoes.Text = "Operações";
             // 
             // MenuItemCadastrar
             // 
+            this.MenuItemCadastrar.Image = ((System.Drawing.Image)(resources.GetObject("MenuItemCadastrar.Image")));
             this.MenuItemCadastrar.Name = "MenuItemCadastrar";
-            this.MenuItemCadastrar.Size = new System.Drawing.Size(180, 22);
+            this.MenuItemCadastrar.Size = new System.Drawing.Size(193, 26);
             this.MenuItemCadastrar.Text = "Cadastrar Livro";
             this.MenuItemCadastrar.Click += new System.EventHandler(this.MenuItemCadastrar_Click);
             // 
             // MenuItemVisualizar
             // 
+            this.MenuItemVisualizar.Image = ((System.Drawing.Image)(resources.GetObject("MenuItemVisualizar.Image")));
             this.MenuItemVisualizar.Name = "MenuItemVisualizar";
-            this.MenuItemVisualizar.Size = new System.Drawing.Size(180, 22);
+            this.MenuItemVisualizar.Size = new System.Drawing.Size(193, 26);
             this.MenuItemVisualizar.Text = "Visualizar Livros";
             this.MenuItemVisualizar.Click += new System.EventHandler(this.MenuItemVisualizar_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(177, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(190, 6);
             // 
             // MenuItemSair
             // 
+            this.MenuItemSair.Image = ((System.Drawing.Image)(resources.GetObject("MenuItemSair.Image")));
             this.MenuItemSair.Name = "MenuItemSair";
-            this.MenuItemSair.Size = new System.Drawing.Size(180, 22);
+            this.MenuItemSair.Size = new System.Drawing.Size(193, 26);
             this.MenuItemSair.Text = "Sair";
             this.MenuItemSair.Click += new System.EventHandler(this.MenuItemSair_Click);
             // 
@@ -92,14 +96,16 @@
             // 
             this.MenuAjuda.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.MenuItemSobre});
+            this.MenuAjuda.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MenuAjuda.Name = "MenuAjuda";
-            this.MenuAjuda.Size = new System.Drawing.Size(50, 20);
+            this.MenuAjuda.Size = new System.Drawing.Size(62, 25);
             this.MenuAjuda.Text = "Ajuda";
             // 
             // MenuItemSobre
             // 
+            this.MenuItemSobre.Image = ((System.Drawing.Image)(resources.GetObject("MenuItemSobre.Image")));
             this.MenuItemSobre.Name = "MenuItemSobre";
-            this.MenuItemSobre.Size = new System.Drawing.Size(180, 22);
+            this.MenuItemSobre.Size = new System.Drawing.Size(180, 26);
             this.MenuItemSobre.Text = "Sobre";
             this.MenuItemSobre.Click += new System.EventHandler(this.MenuItemSobre_Click);
             // 
@@ -114,6 +120,7 @@
             this.Controls.Add(this.menuStrip1);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
             this.MaximizeBox = false;
             this.Name = "FormPrincipal";

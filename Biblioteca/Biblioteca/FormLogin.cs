@@ -58,5 +58,10 @@ namespace Biblioteca
         {
             Application.Exit();
         }
+
+        private void textoSenha_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
