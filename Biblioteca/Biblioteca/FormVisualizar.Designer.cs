@@ -59,9 +59,11 @@
             this.buscar.Text = "Buscar";
             this.buscar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buscar.UseVisualStyleBackColor = true;
+            this.buscar.Click += new System.EventHandler(this.buscar_Click);
             // 
             // textoDados
             // 
+            this.textoDados.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textoDados.Location = new System.Drawing.Point(40, 90);
             this.textoDados.Name = "textoDados";
             this.textoDados.Size = new System.Drawing.Size(715, 261);

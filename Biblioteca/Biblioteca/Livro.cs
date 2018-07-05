@@ -1,4 +1,7 @@
-﻿namespace Biblioteca
+﻿using System;
+using System.Collections;
+
+namespace Biblioteca
 {
     internal class Livro
     {
@@ -19,6 +22,23 @@
             this.paginas = paginas;
             this.quantidade = quantidade;
             this.valor = valor;
+        }
+
+        public static explicit operator Livro(ArrayList v)
+        {
+            throw new NotImplementedException();
+        }
+
+        public string toString() {
+            string str = "";
+            str += "\nNome: " + nome;
+            str += "\nAno: " + ano;
+            str += "\nGênero: " + genero;
+            str += "\nAutor: " + autor;
+            str += "\nPáginas: " + paginas;
+            str += "\nQuantidade: " + quantidade;
+            str += "\nValor: " + valor;
+            return str;
         }
 
         public bool validaLivro() {

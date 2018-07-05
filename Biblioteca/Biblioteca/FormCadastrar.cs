@@ -13,7 +13,7 @@ namespace Biblioteca
 {
     public partial class FormCadastrar : Form
     {
-        public ArrayList lista = null;
+        public static ArrayList lista = null;
         public FormCadastrar()
         {
             InitializeComponent();

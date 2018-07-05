@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -20,6 +21,14 @@ namespace Biblioteca
         private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void buscar_Click(object sender, EventArgs e)
+        {
+            ArrayList lista = FormCadastrar.lista;
+            foreach (Livro l in lista) {
+                textoDados.AppendText(l.toString());
+            }
         }
     }
 }
